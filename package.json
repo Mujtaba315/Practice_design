@@ -1,0 +1,47 @@
+{
+  "name": "rcu",
+  "version": "1.0.0",
+  "description": "Create Group",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "gulp",
+    "build": "gulp build",
+    "startrtl": "gulp defaultrtl",
+    "buildrtl": "gulp buildrtl"
+  },
+  "author": "",
+  "license": "ISC",
+  "siteConfig": {
+    "baseURL": ""
+  },
+  "dependencies": {
+    "bootstrap": "^5.3.3",
+    "delete-empty": "^3.0.0",
+    "postcss": "^8.4.38",
+    "sass": "^1.72.0",
+    "swiper": "^11.1.4"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.24.3",
+    "@babel/preset-env": "^7.24.4",
+    "babel-preset-env": "^1.7.0",
+    "browser-sync": "3.0.2",
+    "cssnano": "^6.1.2",
+    "gulp": "^5.0.0",
+    "gulp-autoprefixer": "^9.0.0",
+    "gulp-babel": "^8.0.0",
+    "gulp-clean": "^0.4.0",
+    "gulp-clean-dest": "^0.2.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-file-include": "^2.3.0",
+    "gulp-postcss": "^10.0.0",
+    "gulp-rename": "^2.0.0",
+    "gulp-rtlcss": "^2.0.0",
+    "gulp-sass": "^5.1.0",
+    "gulp-sourcemaps": "^3.0.0",
+    "gulp-uglify": "^3.0.2",
+    "gulp-watch": "^5.0.1",
+    "video.js": "^8.10.0"
+  }
+}
