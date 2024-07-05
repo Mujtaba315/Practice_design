@@ -1,0 +1,22 @@
+.home-header {
+    background-color: #fff;
+    height: 2.5rem;
+    display: flex;
+    align-items: center;
+
+    .hamburger {
+        padding: 0 1rem;
+    }
+
+    .content {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        
+        .heading {
+            font-weight: 700;
+            margin: 0;
+        }
+    }
+}

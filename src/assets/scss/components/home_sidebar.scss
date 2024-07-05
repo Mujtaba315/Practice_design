@@ -1,0 +1,32 @@
+.home-sidebar {
+    width: 0;
+    visibility: hidden;
+    background-color: #fff;
+    position: fixed;
+    top: 2.5rem;
+    // width: 22rem;
+    height: calc(100vh - 2.5rem);
+    overflow: hidden;
+    transition: all .3s ease-in-out;
+
+    .content {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    }
+
+    a {
+        color: #fff;
+        transition: none;
+    }
+}
+
+.home-sidebar.open {
+    visibility: visible;
+    width: 22rem;
+
+    a{
+        color: black;
+    }
+}

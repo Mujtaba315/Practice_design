@@ -1,0 +1,123 @@
+.footer {
+    background-color: $secondaryColor;
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+
+    .footer-1 {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 7rem;
+
+        .left-content {
+
+            .body1 {
+                margin-bottom: 1.5rem;
+            }
+
+            .street {
+                margin-bottom: 1.5rem;
+            }
+
+            .address {
+                display: flex;
+                justify-content: space-between;
+            }
+
+            @media (max-width: 991px){
+                .address {
+                    display: flex;
+                    column-gap: 15%;
+                    justify-content: normal;
+                }
+
+            }
+
+            @media (max-width: 600px) {
+                .address {
+                    // column-gap: 0;
+                    // justify-content: center;
+                    // flex-wrap: wrap;
+                    row-gap: .8rem;
+                    flex-direction: column;
+                }
+            }
+        }
+
+        @media (max-width: 600px) {
+            .left-content {
+                text-align: center;
+            }
+        }
+
+        .right-content {
+            img {
+                height: 100%;
+            }
+
+            @media (max-width: 991px) {
+                img {
+                    height: fit-content;
+                    max-width: 70%;
+                }
+            }
+
+            @media (max-width: 600px) {
+                img {
+                    max-width: 80%;
+                }
+            }
+        }
+
+        @media (max-width: 991px) {
+            .right-content {
+                text-align: end;
+            }
+
+        }
+        
+        @media (max-width: 600px) {
+            .right-content {
+                margin-top: 3rem;
+                width: 100%;
+                text-align: center;
+            }
+        }
+    }
+
+    @media (max-width: 600px) {
+        .footer-1 {
+            margin-bottom: 4rem;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+    }
+
+    .footer-2 {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .body4 {
+            font-size: 1rem;
+            font-weight: 400;
+        }
+    }
+
+    @media (max-width: 600px) {
+        .footer-2 {
+            flex-wrap: wrap;
+            justify-content: center;
+
+            .left-content {
+                display: flex;
+                flex-direction: column;
+                row-gap: .5rem;
+                align-items: center;
+
+                a {
+                    margin-right: 0;
+                }
+            }
+        }
+    }
+}

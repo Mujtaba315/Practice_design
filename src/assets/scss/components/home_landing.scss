@@ -1,0 +1,16 @@
+.main-div {
+    // background-color: yellow;
+    background-image: url('../img/background.png');
+    background-size: 100vw 100vh;
+    height: calc(100vh - 2.5rem);
+    width: 100vw;
+    text-align: center;
+    align-content: center;
+    
+    .home-heading {
+        color: #fff;
+        font-weight: 700;
+        text-shadow: 0 0 .3rem black, 0 0 .5rem black;
+    } 
+}
+

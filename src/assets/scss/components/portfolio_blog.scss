@@ -1,0 +1,71 @@
+.portfolio-blog {
+
+    .heading {
+        text-align: center;
+        margin-bottom: 3rem;
+    }
+
+    .blogs {
+        display: flex;
+        justify-content: space-between;
+
+        a{
+            max-width: 23%;
+            .blog {
+    
+                .image {
+                    height: 20.625rem;
+                    margin-bottom: 1rem;
+    
+                    img {
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+
+                .title {
+
+                    p {
+                        line-height: 1.1;
+                    }
+                }
+            }
+        }        
+    }
+
+    @media (max-width: 991px) {
+        .blogs {
+            flex-wrap: wrap;
+            column-gap: 1rem;
+            row-gap: 1rem;
+            
+            a {
+                max-width: 49%;
+            }
+        }
+    }
+
+    @media (max-width: 600px) {
+
+        .heading {
+            margin-bottom: 1.5rem;
+        }
+
+        .blogs {
+            justify-content: center;
+
+            a {
+                max-width: 100%;
+
+                .blog {
+                    
+                    .image {
+                        height: auto;
+                        margin-bottom: .7rem;
+                    }
+                }
+            }
+        }
+    }
+
+}

@@ -1,0 +1,60 @@
+.portfolio-intro {
+    display: flex;
+    justify-content: space-between;
+
+    .heading {
+
+        p {
+
+            .star-span {
+                display: flex;
+                align-items: center;
+
+                .star {
+                    font-size: 2.5rem;
+                    margin: 0 .5rem .5rem 0;
+                }
+
+                @media (max-width: 600px) {
+                    .star {
+                        font-size: .7rem;
+                        margin: 0;
+                    }
+                }
+            }
+        }
+    }
+
+    .description {
+        width: 40%;
+
+        // button {
+        //     background: none;
+        //     font-size: .9rem;
+        //     border: .07rem solid $secondaryColor;
+        //     border-radius: 2rem;
+        //     padding: .4rem 1rem;
+        //     margin-top: 1.5rem;
+        // }
+    }
+}
+
+@media (max-width: 600px) {
+    .portfolio-intro {
+        display: block;
+        // margin-left: 10%;
+        // max-width: 80%;
+
+        .heading {
+            margin-bottom: 1.5rem;
+        }
+
+        .description {
+            width: 100%;
+
+            .p-btn {                
+                margin-top: 1rem;                
+            }
+        }
+    }
+}

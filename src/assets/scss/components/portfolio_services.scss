@@ -1,0 +1,148 @@
+.portfolio-services{
+
+    .heading {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 2.5rem;
+
+        .text {
+
+            .star-span {
+                display: flex;
+                align-items: center;
+
+                .star {
+                    font-size: 2.5rem;
+                    margin-bottom: .6rem;
+                }
+
+                @media (max-width: 600px) {
+                    .star {
+                        font-size: .7rem;
+                        margin: 0;
+                    }
+                }
+            }
+        }
+    }
+
+    .services {
+        // display: flex;
+        // justify-content: space-between;
+        padding-bottom: 1rem;
+
+        .service {
+            // max-width: 23%;
+
+            .image {
+                //max-height: 17.875rem;
+                height: 17.875rem;
+                margin-bottom: 1rem;
+
+                img {
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+
+            .text {
+
+                .body2 {
+
+                    margin-bottom: 1.1rem;
+                }
+            }
+        }
+    }
+
+    .pg-and-btn {
+        display: flex;
+        justify-content: flex-end;
+        column-gap: 1rem;
+        align-items: center;
+
+        .pagination {
+            display: flex;
+            column-gap: .3rem;
+        }
+
+        .btns {
+            display: flex;
+            column-gap: .5rem;
+
+            .swiper-button-next, .swiper-button-prev {
+                position: static;
+                // top: unset;
+                margin-top: 0;
+                // bottom: 0;
+                z-index: 20;
+                height: fit-content;
+                border-radius: 50%;
+                // padding: .5rem 1rem;
+                height: 2rem;
+                width: 2rem;
+                color: $white;
+                background-color: $secondaryColor;
+            }
+        
+            .swiper-button-next::after, .swiper-button-prev::after {
+                content: '';
+            }
+        
+            // .swiper-button-prev {
+            //     left: unset;
+            //     right: 2.5rem;
+            // }
+        
+            // .swiper-button-next {
+            //     right: 0;
+            // }
+        }
+    }
+
+}
+
+@media (max-width: 600px) {
+    .portfolio-services {
+        // margin-left: 10%;
+        // margin-right: 10%;
+        // max-width: 80%;
+
+        .heading {
+            flex-wrap: wrap;
+            margin-bottom: 2rem;
+
+            .text {
+
+                p {
+                    margin-bottom: 0;
+                }
+            }
+
+            .detail {
+
+                p{
+                    margin-bottom: 0;
+                }
+            }
+        }
+
+        .services {
+            padding-bottom: .6rem;
+
+            .service {
+
+                .image {
+                    height: auto;
+                }
+
+                .text {
+
+                    .body2 {
+                        margin-bottom: 0;
+                    }
+                }
+            }
+        }
+    }
+}

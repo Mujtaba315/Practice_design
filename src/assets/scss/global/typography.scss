@@ -1,0 +1,166 @@
+
+h1,
+.heading1 {
+  font-size: 10.489rem;
+  line-height: 1.1; // in ar design its 1.2
+  /*rtl:raw:line-height: 1.3; */
+  font-weight: 900;
+  margin: 0 0 1rem;
+
+  @media #{$vpTablet991} {
+    font-size: 6.479rem;
+  }
+
+  @media #{$vpMobile600} {
+    font-size: 2.042rem;
+    margin-bottom: .3rem;
+  }
+
+  &.white {
+    color: $white;
+  }
+}
+
+h2,
+.heading2 {
+  font-size: 3.75rem;
+  line-height: 1.3; // in ar design its 1.2
+  /*rtl:raw:line-height: 1.3; */
+  font-weight: 300;
+
+  @media #{$vpMobile600} {
+    font-size: 2rem;
+  }
+
+  &.white {
+    color: $white;
+  }
+}
+
+h3,
+.heading3 {
+  font-size: 2.5rem;
+  line-height: 1.3; // in ar design its 1.2
+  /*rtl:raw:line-height: 1.3; */
+  font-weight: 300;
+
+  @media #{$vpMobile600} {
+    font-size: 1.75rem;
+  }
+
+  &.white {
+    color: $white;
+  }
+}
+
+h4,
+.heading4 {
+  font-size: 2rem;
+  line-height: 1.2; // in ar design its 1.2
+  /*rtl:raw:line-height: 1.3; */
+  font-weight: 300;
+
+  @media #{$vpMobile600} {
+    font-size: 1.25rem;
+  }
+
+  &.white {
+    color: $white;
+  }
+}
+
+h5,
+.heading5 {
+  font-size: 1.75rem;
+  line-height: 1.2; // in ar design its 1.2
+  /*rtl:raw:line-height: 1.3; */
+  font-weight: 300;
+
+  @media #{$vpMobile600} {
+    font-size: 1.375rem;
+  }
+
+  &.white {
+    color: $white;
+  }
+}
+
+.body1 {
+	font-size: 4.25rem;
+	line-height: 1;
+	font-weight: 900;
+  font-family: $secondaryFont;
+	/*rtl:raw:line-height: 1.6; */
+	@media #{$vpMobile600} {
+		font-size: 1.5rem;
+	}
+
+  &.white {
+    color: $white;
+  }
+}
+
+.body2 {
+  font-size: 2rem;
+  line-height: 1.4;
+  font-weight: 900;
+  font-family: $secondaryFont;
+
+  /*rtl:raw:line-height: 1.6; */
+
+  @media #{$vpMobile600} {
+    font-size: 1rem;
+  }
+
+  &.white {
+    color: $white;
+  }
+}
+.body3 {
+    font-size: 1.2rem;
+    // text-shadow: 0.025rem 0.025rem $secondaryColor;
+    //font-weight: 600;
+    line-height: 1.4;
+    font-family: $secondaryFont;
+	/*rtl:raw:line-height: 1.6; */
+
+  @media #{$vpMobile600} {
+    font-size: .9rem;
+  }
+
+	&.white {
+		color: $white;
+	}
+
+  /*rtl:raw:line-height: 1.6; */
+
+  &.white {
+    color: $white;
+  }
+}
+
+.body4 {
+  font-size: 0.71rem;
+  line-height: 1.4;
+  //font-weight: 300;
+  font-weight: 600;
+  // text-shadow: 0.015rem 0 $secondaryColor;
+  font-family: $secondaryFont;
+
+  /*rtl:raw:line-height: 1.6; */
+  &.white {
+    color: $white;
+  }
+}
+
+.body5 {
+  font-size: 0.75rem;
+  line-height: 1.4;
+  font-weight: 300;
+  font-family: $secondaryFont;
+
+  &.white {
+    color: $white;
+  }
+}
+

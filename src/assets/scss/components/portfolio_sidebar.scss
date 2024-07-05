@@ -1,0 +1,39 @@
+.portfolio-sidebar {
+    height: 100vh;
+    width: 0;
+    background-color: $white;
+    position: absolute;
+    z-index: 2;
+    visibility: hidden;
+    opacity: 0;
+    overflow: hidden;
+    transition: all .3s ease-in-out;
+    
+    .items {
+
+        .item {
+            padding: .5rem 0 .5rem 1rem;
+           
+
+            a {
+                font-size: .64rem;
+                font-weight: bold;
+            }
+        }
+
+        .item.active {
+            background-color: $secondaryColor;
+            
+            a {
+                color: $white;
+            }
+        }
+    }
+}
+
+.portfolio-sidebar.open {
+    visibility: visible;
+    opacity: 1;
+    width: 10rem;
+    overflow: hidden;
+}

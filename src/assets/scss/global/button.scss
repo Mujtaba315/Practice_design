@@ -1,0 +1,107 @@
+
+.main-primary-btn {
+  color: $secondaryColor;
+  font-size: 1rem;
+  line-height: 1.4;
+  font-weight: 300;
+  background: $primaryColor;
+  padding: 0.75rem 1.5rem;
+  width: auto;
+  max-width: 100%;
+  border-radius: 12.5rem;
+  border: 0.063rem solid transparent;
+  height: 4rem;
+  transition: all 0.4s ease-out;
+
+  .btn-text {
+    font-size: 1rem;
+    line-height: 1.4;
+    font-weight: 300;
+
+    @media #{$vpMobile600} {
+      font-size: 0.875rem;
+      line-height: 1.225rem;
+    }
+  }
+
+  @media #{$vpTablet991} {
+    padding: 0.875rem 1.5rem;
+  }
+
+  @media #{$vpMobile600} {
+    font-size: 0.875rem;
+    line-height: 1.225rem;
+  }
+
+  &:hover,
+  &.active {
+    background: $primaryColor;
+    color: $secondaryColor;
+    transition: all 0.4s ease-out;
+  }
+
+  &:focus {
+    outline: none;
+  }
+
+  &.white {
+    color: $secondaryColor;
+    background: $white;
+    border-color: $secondaryColor;
+
+    &:hover,
+    &.active {
+      background-color: $black;
+      color: $white;
+      border-color: $white;
+    }
+
+    &.disabled {
+      opacity: 0.5;
+      color: $secondaryColor;
+      background: $white;
+      border-color: $secondaryColor;
+    }
+  }
+
+  &.disabled,
+  &[disabled] {
+    opacity: 0.5;
+    color: $white;
+    background: $secondaryColor;
+    border-color: $white;
+  }
+}
+
+// portfolio btns
+
+.p-btn {
+  background: none;
+  font-family: Helvetica;
+  font-size: .9rem;
+  border: .07rem solid $secondaryColor;
+  border-radius: 2rem;
+  cursor: pointer;
+
+  &.header-btn {
+    font-weight: 600;
+    // text-shadow: .025rem 0 $secondaryColor;
+    text-transform: uppercase;
+    padding: .7rem 1rem;
+  }
+
+  &.inner-btn {
+    padding: .4rem 1rem;
+    margin-top: 1.5rem;
+  }
+}
+
+.p-btn:hover {
+  background-color: $hoverColor;
+}
+
+@media #{$vpMobile600} {
+  .p-btn {
+    font-size: .7rem;
+  }
+}
